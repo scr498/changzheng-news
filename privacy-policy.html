@@ -49,8 +49,11 @@
       font-size: 19px; margin: 0 0 14px; padding-left: 12px;
       border-left: 4px solid var(--primary); color: var(--primary-dark);
     }
+    .card h3 {
+      font-size: 16px; margin: 16px 0 8px; color: var(--primary-dark);
+    }
     .card p { margin: 10px 0; color: var(--text); font-size: 15px; }
-    .card ul { margin: 10px 0; padding-left: 22px; }
+    .card ul, .card ol { margin: 10px 0; padding-left: 22px; }
     .card li { margin: 6px 0; font-size: 15px; }
 
     .promise {
@@ -82,6 +85,10 @@
       font-size: 13px; color: var(--text-soft); background: #fff8e1;
       border: 1px solid #ffe082; border-radius: 10px; padding: 12px 14px; margin-top: 10px;
     }
+    .highlight-box {
+      background: #e8f5e9; border: 1px solid #a5d6a7; border-radius: 10px;
+      padding: 14px 16px; margin-top: 12px;
+    }
     footer {
       text-align: center; color: var(--text-soft); font-size: 12px;
       padding: 24px 16px 40px;
@@ -109,51 +116,49 @@
   <header class="hero">
     <h1>长征记忆 · 隐私政策</h1>
     <div class="sub">重走长征路 · 红色文化学习应用</div>
-    <div class="badge">最后更新日期：2026年7月27日</div>
+    <div class="badge">最后更新日期：2026年7月29日</div>
   </header>
 
   <main class="container">
     <section class="card">
       <p>感谢您使用「长征记忆」应用（以下简称"本应用"）。我们非常重视您的隐私保护。本政策说明本应用如何收集、使用和保护您的信息。请您在使用前仔细阅读。</p>
+      <div class="highlight-box">
+        <strong>核心承诺：</strong>本应用<strong>不收集、不上传任何用户个人信息</strong>。您的学习进度、答题记录、收藏、令牌、录音文件等所有数据均仅存储在设备本地（应用沙箱），不会传输至任何服务器。
+      </div>
     </section>
 
     <section class="card">
       <h2>一、我们如何收集和使用您的个人信息</h2>
-      <p>本应用<strong>不收集、不上传任何用户个人信息</strong>。您的学习进度、答题记录、收藏、令牌等数据均仅存储在您的设备本地（应用沙箱），不会传输至任何服务器。</p>
+      <p>本应用<strong>不收集、不上传任何用户个人信息</strong>。所有用户数据均在设备本地处理与存储，不会传输至任何服务器。</p>
       <div class="promise">
         <div class="item"><span class="ic">✓</span><span class="txt"><b>不收集</b>姓名、电话、邮箱、身份证等任何个人信息</span></div>
         <div class="item"><span class="ic">✓</span><span class="txt"><b>不上传</b>任何用户数据至服务器或第三方</span></div>
         <div class="item"><span class="ic">✓</span><span class="txt"><b>仅本地</b>处理与存储全部用户数据</span></div>
         <div class="item"><span class="ic">✓</span><span class="txt"><b>可撤回</b>所有敏感权限，随时在系统设置中关闭</span></div>
       </div>
+      <p>本应用<strong>不会</strong>收集您的设备标识符、网络身份标识、个人基本信息、位置信息等任何可用于识别您个人身份的数据。</p>
     </section>
 
     <section class="card">
       <h2>二、系统权限说明</h2>
-      <p>为保障功能正常运行，本应用会按需申请以下系统权限。除网络权限用于拉取公开内容外，其余权限相关数据均仅在本地处理，不会上传。</p>
+      <p>为保障功能正常运行，本应用会按需申请以下系统权限。所有权限均在使用对应功能时动态申请，您可随时在系统设置中撤回授权；撤回后相关功能不可用，但不影响其他功能。</p>
       <div class="table-wrap">
         <table>
           <thead>
-            <tr><th>权限</th><th>对应功能</th><th>用途说明</th><th>是否上传</th></tr>
+            <tr><th>权限</th><th>对应功能</th><th>用途说明</th><th>数据处理方式</th></tr>
           </thead>
           <tbody>
             <tr>
               <td>网络（INTERNET）</td>
-              <td>红色档案 / 红色资讯 / 影音推荐</td>
-              <td>访问在线公开内容与更新</td>
+              <td>红色档案 / 红色资讯 / 影音推荐 / AI对话</td>
+              <td>访问在线公开内容、拉取资讯与视频列表、AI对话请求</td>
               <td class="tag-ok">仅拉取公开内容，不上传个人信息</td>
             </tr>
             <tr>
-              <td>存储（应用沙箱读写）</td>
-              <td>全局</td>
-              <td>缓存应用数据、提升浏览体验</td>
-              <td class="tag-ok">仅本地</td>
-            </tr>
-            <tr>
               <td>麦克风（MICROPHONE）</td>
-              <td>朗读（并入主席诗词）</td>
-              <td>录制用户朗诵音频，用于本地回放</td>
-              <td class="tag-ok">音频仅在本地处理，不上传</td>
+              <td>语音搜索 / 朗诵录音 / 语音识别</td>
+              <td>录制用户朗诵音频用于本地回放；识别用户语音转为文字用于搜索</td>
+              <td class="tag-ok">音频仅在本地处理与存储，不上传</td>
             </tr>
             <tr>
               <td>运动与健身（ACTIVITY_MOTION）</td>
@@ -161,31 +166,61 @@
               <td>读取设备步数，计算虚拟行军里程</td>
               <td class="tag-ok">仅本地计算</td>
             </tr>
+            <tr>
+              <td>读写媒体文件（WRITE_IMAGEVIDEO）</td>
+              <td>保存图片 / 导出学习报告</td>
+              <td>将应用内图片、学习报告等文件保存至设备相册或文件系统</td>
+              <td class="tag-ok">仅本地读写，不上传</td>
+            </tr>
           </tbody>
         </table>
       </div>
-      <p>所有权限均在使用对应功能时申请，您可随时在系统设置中撤回授权；撤回后相关功能不可用，但不影响其他功能。</p>
     </section>
 
     <section class="card">
-      <h2>三、数据安全</h2>
-      <p>本应用所有用户数据均在设备本地处理与存储，不上传至任何服务器，确保您的隐私安全。您可随时通过「设置 → 应用管理 → 长征记忆 → 存储 → 清除数据」删除全部本地数据。</p>
+      <h2>三、数据本地化存储</h2>
+      <p>本应用所有用户数据均在设备本地处理与存储，包括但不限于：</p>
+      <ul>
+        <li><strong>学习记录</strong>：已学章节进度、答题得分与完成情况</li>
+        <li><strong>令牌与成就</strong>：已获得令牌数量与成就徽章</li>
+        <li><strong>收藏内容</strong>：用户收藏的文章与资料</li>
+        <li><strong>虚拟行军数据</strong>：步数统计与行军里程</li>
+        <li><strong>录音文件</strong>：朗诵录音音频文件</li>
+        <li><strong>隐私同意记录</strong>：是否已同意隐私政策</li>
+      </ul>
+      <p>您可随时通过「系统设置 → 应用管理 → 长征记忆 → 存储 → 清除数据」删除全部本地数据，或通过卸载应用彻底清除。</p>
     </section>
 
     <section class="card">
-      <h2>四、第三方服务</h2>
-      <p>本应用可能包含第三方链接（如纪念馆官网、新闻来源等），这些网站有各自的隐私政策，建议您查阅其政策内容。本应用通过公开 CDN 拉取的资讯内容均为公开信息，不涉及个人信息收集。</p>
-      <p><strong>AI 智能对话：</strong>本应用的「AI 对话」功能由第三方服务商「智谱 GLM（Zhipu AI）」提供。当您使用 AI 对话时，您输入的问题与对话内容会通过网络发送至智谱 GLM 云端进行处理并生成回复，以实现智能问答功能。我们不会在对话内容中附加您的个人身份信息，请您避免在对话中透露姓名、电话、住址等敏感个人信息。智谱 GLM 的隐私政策详见其官方网站，您可随时在应用内「设置」中更换或清空所使用的 API Key。</p>
+      <h2>四、AI 智能对话</h2>
+      <p>本应用的「AI 对话」功能由第三方服务商「智谱 GLM（Zhipu AI）」提供。当您使用 AI 对话时，您输入的<strong>问题文本</strong>与<strong>对话内容</strong>会通过网络发送至智谱 GLM 云端进行处理并生成回复。</p>
+      <p><strong>请注意：</strong></p>
+      <ul>
+        <li>我们不会在对话内容中附加您的个人身份信息</li>
+        <li>请您避免在对话中透露姓名、电话、住址、身份证号等敏感个人信息</li>
+        <li>智谱 GLM 的隐私政策详见 <a href="https://open.bigmodel.cn/privacy" target="_blank">https://open.bigmodel.cn/privacy</a></li>
+        <li>您可随时在应用内「设置」中更换或清空所使用的 API Key</li>
+      </ul>
     </section>
 
     <section class="card">
-      <h2>五、儿童隐私</h2>
-      <p>本应用主要面向党史学习教育与爱国主义教育场景，内容健康向上，适合各年龄段用户。若涉及儿童使用，请在监护人指导下使用，涉及权限授权时建议由监护人确认。</p>
+      <h2>五、第三方服务</h2>
+      <p>本应用可能包含第三方链接（如纪念馆官网、新闻来源网站等），这些网站有各自的隐私政策，建议您查阅其政策内容。</p>
+      <ul>
+        <li><strong>内容托管：</strong>本应用的公开内容（资讯、档案、视频列表等）通过 GitHub Pages / jsDelivr CDN 分发，均为公开信息，不涉及个人信息收集。</li>
+        <li><strong>AI 服务：</strong>智谱 GLM（Zhipu AI）—— 详见第四节。</li>
+        <li><strong>在线视频：</strong>本应用中的视频内容可能由第三方平台托管，访问时受该平台隐私政策约束。</li>
+      </ul>
     </section>
 
-    <section class="card rights">
-      <h2>六、用户隐私权利</h2>
-      <p>本应用不收集、不上传任何个人信息，所有用户数据（学习进度、答题记录、收藏等）均仅存储在设备本地。用户享有以下权利：</p>
+    <section class="card">
+      <h2>六、儿童隐私</h2>
+      <p>本应用主要面向党史学习教育与爱国主义教育场景，内容健康向上，适合各年龄段用户。若涉及儿童独立使用，请在监护人指导下使用，涉及权限授权时建议由监护人确认。</p>
+    </section>
+
+    <section class="card">
+      <h2>七、用户隐私权利</h2>
+      <p>本应用不收集、不上传任何个人信息。基于本地存储的特性，用户享有以下权利：</p>
       <ol>
         <li><strong>访问与删除</strong>：可随时在应用内清除本地数据，或通过卸载应用删除全部本地信息。</li>
         <li><strong>权限撤回</strong>：可随时在系统设置中撤回已授予的权限，撤回后相关功能不可用，但不影响其他功能。</li>
@@ -193,9 +228,14 @@
       </ol>
     </section>
 
+    <section class="card">
+      <h2>八、隐私政策的更新</h2>
+      <p>我们可能会适时更新本隐私政策。更新后的版本将在本页面发布并更新"最后更新日期"。重大变更时，我们会在应用内以弹窗或公告形式通知您。</p>
+    </section>
+
     <section class="card contact">
-      <h2>七、联系我们</h2>
-      <p>如对本隐私政策有任何疑问，请联系开发者：</p>
+      <h2>九、联系我们</h2>
+      <p>如对本隐私政策有任何疑问或建议，请联系开发者：</p>
       <ul>
         <li>邮箱：<a href="mailto:scr498@qq.com">scr498@qq.com</a></li>
         <li>电话 / 微信：15082773880</li>
