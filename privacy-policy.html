@@ -1,259 +1,248 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>长征记忆 · 隐私政策</title>
-  <meta name="description" content="《长征记忆》应用隐私政策：本应用不收集、不上传任何用户个人信息，所有数据均在设备本地处理。" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>长征记忆 隐私政策</title>
   <style>
-    :root {
-      --primary: #b71c1c;
-      --primary-dark: #8e0000;
-      --primary-light: #fdecea;
-      --text: #333333;
-      --text-soft: #666666;
-      --border: #e6e6e6;
-      --bg: #f5f5f5;
-      --ok: #2e7d32;
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
     body {
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.8;
+      color: #1f2329;
+      background: #f5f6f8;
       margin: 0;
-      font-family: system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
-      color: var(--text);
-      background: var(--bg);
-      line-height: 1.75;
-      -webkit-font-smoothing: antialiased;
+      padding: 0;
     }
-    .hero {
-      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-      color: #fff;
-      padding: 48px 20px 40px;
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 40px 48px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    }
+    h1 {
+      font-size: 26px;
       text-align: center;
+      color: #b91c1c;
+      margin-bottom: 8px;
     }
-    .hero h1 { margin: 0 0 8px; font-size: 28px; font-weight: 700; letter-spacing: 1px; }
-    .hero .sub { font-size: 14px; opacity: 0.85; }
-    .hero .badge {
-      display: inline-block; margin-top: 14px; padding: 4px 14px;
-      border: 1px solid rgba(255,255,255,0.5); border-radius: 999px;
-      font-size: 12px; opacity: 0.9;
+    .meta {
+      text-align: center;
+      color: #8a8f99;
+      font-size: 14px;
+      margin-bottom: 28px;
     }
-    .container { max-width: 820px; margin: 0 auto; padding: 24px 16px 80px; }
-    .card {
-      background: #fff; border: 1px solid var(--border); border-radius: 14px;
-      padding: 24px 22px; margin-bottom: 18px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    h2 {
+      font-size: 19px;
+      color: #b91c1c;
+      border-left: 4px solid #b91c1c;
+      padding-left: 12px;
+      margin-top: 32px;
     }
-    .card h2 {
-      font-size: 19px; margin: 0 0 14px; padding-left: 12px;
-      border-left: 4px solid var(--primary); color: var(--primary-dark);
+    h3 {
+      font-size: 16px;
+      color: #333;
+      margin-top: 20px;
     }
-    .card h3 {
-      font-size: 16px; margin: 16px 0 8px; color: var(--primary-dark);
+    p {
+      margin: 10px 0;
+      font-size: 15px;
     }
-    .card p { margin: 10px 0; color: var(--text); font-size: 15px; }
-    .card ul, .card ol { margin: 10px 0; padding-left: 22px; }
-    .card li { margin: 6px 0; font-size: 15px; }
-
-    .promise {
-      display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin: 4px 0 0;
+    ul {
+      padding-left: 22px;
+      font-size: 15px;
     }
-    .promise .item {
-      background: var(--primary-light); border-radius: 10px; padding: 14px 16px;
-      display: flex; align-items: flex-start; gap: 10px;
+    li {
+      margin: 6px 0;
     }
-    .promise .item .ic { color: var(--ok); font-size: 18px; line-height: 1.4; }
-    .promise .item .txt { font-size: 14px; color: var(--text); }
-    .promise .item .txt b { color: var(--primary-dark); }
-
-    table { width: 100%; border-collapse: collapse; margin: 12px 0 4px; font-size: 14px; }
-    thead th {
-      background: var(--primary); color: #fff; text-align: left;
-      padding: 10px 12px; font-weight: 600;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 14px;
     }
-    thead th:first-child { border-top-left-radius: 8px; }
-    thead th:last-child { border-top-right-radius: 8px; }
-    tbody td { padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
-    tbody tr:nth-child(even) { background: #fafafa; }
-    .tag-ok { color: var(--ok); font-weight: 600; }
-    .table-wrap { overflow-x: auto; }
-
-    .contact a { color: var(--primary); text-decoration: none; }
-    .contact a:hover { text-decoration: underline; }
-    .note {
-      font-size: 13px; color: var(--text-soft); background: #fff8e1;
-      border: 1px solid #ffe082; border-radius: 10px; padding: 12px 14px; margin-top: 10px;
+    th, td {
+      border: 1px solid #e0e3e8;
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
     }
-    .highlight-box {
-      background: #e8f5e9; border: 1px solid #a5d6a7; border-radius: 10px;
-      padding: 14px 16px; margin-top: 12px;
+    th {
+      background: #fdecec;
+      color: #b91c1c;
+      font-weight: 600;
     }
-    footer {
-      text-align: center; color: var(--text-soft); font-size: 12px;
-      padding: 24px 16px 40px;
+    hr {
+      border: none;
+      border-top: 1px solid #eceef1;
+      margin: 28px 0;
     }
-    .back-top {
-      position: fixed; right: 18px; bottom: 24px; width: 44px; height: 44px;
-      border-radius: 50%; background: var(--primary); color: #fff; border: none;
-      font-size: 20px; cursor: pointer; box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-      display: none; align-items: center; justify-content: center;
+    .footer {
+      text-align: center;
+      color: #8a8f99;
+      font-size: 13px;
+      margin-top: 36px;
     }
-    .back-top.show { display: flex; }
-    @media (max-width: 560px) {
-      .promise { grid-template-columns: 1fr; }
-      .hero h1 { font-size: 23px; }
-    }
-    @media print {
-      .hero { background: #fff; color: #000; padding: 0; }
-      .hero h1 { color: #000; }
-      .card { box-shadow: none; border: none; padding: 0; }
-      .back-top { display: none !important; }
+    strong {
+      color: #333;
     }
   </style>
 </head>
 <body>
-  <header class="hero">
-    <h1>长征记忆 · 隐私政策</h1>
-    <div class="sub">重走长征路 · 红色文化学习应用</div>
-    <div class="badge">最后更新日期：2026年7月29日</div>
-  </header>
+  <div class="container">
+    <h1>长征记忆 隐私政策</h1>
+    <div class="meta">
+      <p>最后更新日期：2026年8月2日<br>生效日期：2026年8月2日</p>
+    </div>
 
-  <main class="container">
-    <section class="card">
-      <p>感谢您使用「长征记忆」应用（以下简称"本应用"）。我们非常重视您的隐私保护。本政策说明本应用如何收集、使用和保护您的信息。请您在使用前仔细阅读。</p>
-      <div class="highlight-box">
-        <strong>核心承诺：</strong>本应用<strong>不收集、不上传任何用户个人信息</strong>。您的学习进度、答题记录、收藏、令牌、录音文件等所有数据均仅存储在设备本地（应用沙箱），不会传输至任何服务器。
-      </div>
-    </section>
+    <p>感谢您使用「长征记忆」应用（以下简称"本应用"）。我们非常重视您的隐私保护和个人信息安全。本隐私政策将详细说明本应用如何收集、使用、存储和保护您的信息。请您在使用本应用前仔细阅读本政策。</p>
 
-    <section class="card">
-      <h2>一、我们如何收集和使用您的个人信息</h2>
-      <p>本应用<strong>不收集、不上传任何用户个人信息</strong>。所有用户数据均在设备本地处理与存储，不会传输至任何服务器。</p>
-      <div class="promise">
-        <div class="item"><span class="ic">✓</span><span class="txt"><b>不收集</b>姓名、电话、邮箱、身份证等任何个人信息</span></div>
-        <div class="item"><span class="ic">✓</span><span class="txt"><b>不上传</b>任何用户数据至服务器或第三方</span></div>
-        <div class="item"><span class="ic">✓</span><span class="txt"><b>仅本地</b>处理与存储全部用户数据</span></div>
-        <div class="item"><span class="ic">✓</span><span class="txt"><b>可撤回</b>所有敏感权限，随时在系统设置中关闭</span></div>
-      </div>
-      <p>本应用<strong>不会</strong>收集您的设备标识符、网络身份标识、个人基本信息、位置信息等任何可用于识别您个人身份的数据。</p>
-    </section>
+    <hr>
 
-    <section class="card">
-      <h2>二、系统权限说明</h2>
-      <p>为保障功能正常运行，本应用会按需申请以下系统权限。所有权限均在使用对应功能时动态申请，您可随时在系统设置中撤回授权；撤回后相关功能不可用，但不影响其他功能。</p>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr><th>权限</th><th>对应功能</th><th>用途说明</th><th>数据处理方式</th></tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>网络（INTERNET）</td>
-              <td>红色档案 / 红色资讯 / 影音推荐 / AI对话</td>
-              <td>访问在线公开内容、拉取资讯与视频列表、AI对话请求</td>
-              <td class="tag-ok">仅拉取公开内容，不上传个人信息</td>
-            </tr>
-            <tr>
-              <td>麦克风（MICROPHONE）</td>
-              <td>语音搜索 / 朗诵录音 / 语音识别</td>
-              <td>录制用户朗诵音频用于本地回放；识别用户语音转为文字用于搜索</td>
-              <td class="tag-ok">音频仅在本地处理与存储，不上传</td>
-            </tr>
-            <tr>
-              <td>运动与健身（ACTIVITY_MOTION）</td>
-              <td>重走长征路</td>
-              <td>读取设备步数，计算虚拟行军里程</td>
-              <td class="tag-ok">仅本地计算</td>
-            </tr>
-            <tr>
-              <td>读写媒体文件（WRITE_IMAGEVIDEO）</td>
-              <td>保存图片 / 导出学习报告</td>
-              <td>将应用内图片、学习报告等文件保存至设备相册或文件系统</td>
-              <td class="tag-ok">仅本地读写，不上传</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
+    <h2>一、我们如何收集和使用您的个人信息</h2>
 
-    <section class="card">
-      <h2>三、数据本地化存储</h2>
-      <p>本应用所有用户数据均在设备本地处理与存储，包括但不限于：</p>
-      <ul>
-        <li><strong>学习记录</strong>：已学章节进度、答题得分与完成情况</li>
-        <li><strong>令牌与成就</strong>：已获得令牌数量与成就徽章</li>
-        <li><strong>收藏内容</strong>：用户收藏的文章与资料</li>
-        <li><strong>虚拟行军数据</strong>：步数统计与行军里程</li>
-        <li><strong>录音文件</strong>：朗诵录音音频文件</li>
-        <li><strong>隐私同意记录</strong>：是否已同意隐私政策</li>
-      </ul>
-      <p>您可随时通过「系统设置 → 应用管理 → 长征记忆 → 存储 → 清除数据」删除全部本地数据，或通过卸载应用彻底清除。</p>
-    </section>
+    <h3>1.1 基本原则</h3>
+    <p>本应用<strong>不收集、不上传任何用户个人信息</strong>。您的学习进度、答题记录、打卡记录、收藏内容、学习令牌、朗读录音等数据均仅存储在您的设备本地（应用沙箱目录），不会传输至任何服务器或第三方。</p>
 
-    <section class="card">
-      <h2>四、AI 智能对话</h2>
-      <p>本应用的「AI 对话」功能由第三方服务商「智谱 GLM（Zhipu AI）」提供。当您使用 AI 对话时，您输入的<strong>问题文本</strong>与<strong>对话内容</strong>会通过网络发送至智谱 GLM 云端进行处理并生成回复。</p>
-      <p><strong>请注意：</strong></p>
-      <ul>
-        <li>我们不会在对话内容中附加您的个人身份信息</li>
-        <li>请您避免在对话中透露姓名、电话、住址、身份证号等敏感个人信息</li>
-        <li>智谱 GLM 的隐私政策详见 <a href="https://open.bigmodel.cn/privacy" target="_blank">https://open.bigmodel.cn/privacy</a></li>
-        <li>您可随时在应用内「设置」中更换或清空所使用的 API Key</li>
-      </ul>
-    </section>
+    <h3>1.2 数据存储说明</h3>
+    <ul>
+      <li><strong>本地存储</strong>：所有用户数据均存储在应用沙箱目录中，与其他应用相互隔离；</li>
+      <li><strong>数据安全</strong>：数据仅在您的本设备内处理，不进行任何网络传输；</li>
+      <li><strong>数据控制</strong>：您可以随时在系统设置中清除应用数据或卸载应用，所有本地数据将被删除。</li>
+    </ul>
 
-    <section class="card">
-      <h2>五、第三方服务</h2>
-      <p>本应用可能包含第三方链接（如纪念馆官网、新闻来源网站等），这些网站有各自的隐私政策，建议您查阅其政策内容。</p>
-      <ul>
-        <li><strong>内容托管：</strong>本应用的公开内容（资讯、档案、视频列表等）通过 GitHub Pages / jsDelivr CDN 分发，均为公开信息，不涉及个人信息收集。</li>
-        <li><strong>AI 服务：</strong>智谱 GLM（Zhipu AI）—— 详见第四节。</li>
-        <li><strong>在线视频：</strong>本应用中的视频内容可能由第三方平台托管，访问时受该平台隐私政策约束。</li>
-      </ul>
-    </section>
+    <hr>
 
-    <section class="card">
-      <h2>六、儿童隐私</h2>
-      <p>本应用主要面向党史学习教育与爱国主义教育场景，内容健康向上，适合各年龄段用户。若涉及儿童独立使用，请在监护人指导下使用，涉及权限授权时建议由监护人确认。</p>
-    </section>
+    <h2>二、系统权限说明</h2>
+    <p>为保障功能正常运行，本应用会按需申请以下系统权限。除网络权限用于拉取公开内容外，其余权限相关数据均仅在本地处理，绝不上传。</p>
 
-    <section class="card">
-      <h2>七、用户隐私权利</h2>
-      <p>本应用不收集、不上传任何个人信息。基于本地存储的特性，用户享有以下权利：</p>
-      <ol>
-        <li><strong>访问与删除</strong>：可随时在应用内清除本地数据，或通过卸载应用删除全部本地信息。</li>
-        <li><strong>权限撤回</strong>：可随时在系统设置中撤回已授予的权限，撤回后相关功能不可用，但不影响其他功能。</li>
-        <li><strong>咨询与投诉</strong>：如对隐私事宜有疑问，可通过本政策"联系我们"中的方式与我们联系。</li>
-      </ol>
-    </section>
+    <table>
+      <thead>
+        <tr>
+          <th>权限名称</th>
+          <th>对应功能</th>
+          <th>用途说明</th>
+          <th>数据处理方式</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>网络（INTERNET）</td>
+          <td>红色故事 / 诗词等红色文化内容</td>
+          <td>联网获取长征故事、诗词等公开红色文化内容，提升阅读体验</td>
+          <td>仅拉取公开内容，不上传个人信息</td>
+        </tr>
+        <tr>
+          <td>运动与健身（ACTIVITY_MOTION）</td>
+          <td>重走长征路</td>
+          <td>读取设备计步传感器数据，将步数换算为长征行军里程</td>
+          <td>步数仅在设备本地计算与展示，不上传</td>
+        </tr>
+        <tr>
+          <td>麦克风（MICROPHONE）</td>
+          <td>诗词朗读</td>
+          <td>录制用户声音并本地回放</td>
+          <td>音频仅在本地处理，不上传</td>
+        </tr>
+        <tr>
+          <td>媒体（WRITE_IMAGEVIDEO）</td>
+          <td>分享卡片</td>
+          <td>将生成的长征成就分享卡片保存到设备相册</td>
+          <td>仅本地保存，不上传</td>
+        </tr>
+      </tbody>
+    </table>
 
-    <section class="card">
-      <h2>八、隐私政策的更新</h2>
-      <p>我们可能会适时更新本隐私政策。更新后的版本将在本页面发布并更新"最后更新日期"。重大变更时，我们会在应用内以弹窗或公告形式通知您。</p>
-    </section>
+    <h3>2.1 权限申请原则</h3>
+    <ul>
+      <li><strong>按需申请</strong>：所有权限仅在使用对应功能时申请；</li>
+      <li><strong>用户授权</strong>：您可以自主选择是否授权；</li>
+      <li><strong>随时撤回</strong>：您可随时在系统设置中撤回授权；</li>
+      <li><strong>功能影响</strong>：撤回授权后相关功能不可用，但不影响其他功能正常使用。</li>
+    </ul>
 
-    <section class="card contact">
-      <h2>九、联系我们</h2>
-      <p>如对本隐私政策有任何疑问或建议，请联系开发者：</p>
-      <ul>
-        <li>邮箱：<a href="mailto:scr498@qq.com">scr498@qq.com</a></li>
-        <li>电话 / 微信：15082773880</li>
-      </ul>
-    </section>
-  </main>
+    <hr>
 
-  <footer>
-    © 2026 长征记忆 · 本隐私政策最终解释权归开发者所有
-  </footer>
+    <h2>三、数据安全保护措施</h2>
 
-  <button class="back-top" id="backTop" aria-label="返回顶部">↑</button>
-  <script>
-    const btn = document.getElementById('backTop');
-    window.addEventListener('scroll', () => {
-      btn.classList.toggle('show', window.scrollY > 400);
-    });
-    btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-  </script>
+    <h3>3.1 技术措施</h3>
+    <ul>
+      <li><strong>数据隔离</strong>：所有数据存储在应用沙箱中，与其他应用隔离；</li>
+      <li><strong>本地处理</strong>：敏感数据（如录音、步数）仅在本地处理；</li>
+      <li><strong>权限控制</strong>：严格遵循最小权限原则，仅申请必要权限。</li>
+    </ul>
+
+    <h3>3.2 数据存储</h3>
+    <ul>
+      <li><strong>存储位置</strong>：应用沙箱目录（<code>/data/app/el2/100/base/com.scr498.changzheng100/</code>）；</li>
+      <li><strong>存储内容</strong>：学习进度、答题记录、打卡记录、收藏数据、朗读录音、缓存内容；</li>
+      <li><strong>存储期限</strong>：数据永久存储在本地，直至您主动清除或卸载应用。</li>
+    </ul>
+
+    <h3>3.3 用户权利</h3>
+    <ul>
+      <li><strong>查看权</strong>：您可以在应用内查看所有本地存储的数据；</li>
+      <li><strong>删除权</strong>：您可以通过清除应用数据或卸载应用删除所有数据；</li>
+      <li><strong>导出权</strong>：您可以导出学习记录等数据（如功能支持）。</li>
+    </ul>
+
+    <hr>
+
+    <h2>四、第三方服务</h2>
+
+    <h3>4.1 外部链接</h3>
+    <p>本应用可能包含第三方链接（如纪念馆官网、新闻来源等），这些网站有各自的隐私政策，建议您查阅其政策内容。本应用不对第三方网站的隐私实践负责。</p>
+
+    <h3>4.2 第三方内容</h3>
+    <ul>
+      <li><strong>红色故事 / 诗词</strong>：来自公开的红色历史文化资料；</li>
+      <li><strong>红色资讯</strong>：来自公开的新闻媒体平台；</li>
+      <li><strong>影音推荐</strong>：来自公开的视频平台链接。</li>
+    </ul>
+    <p>所有第三方内容仅用于教育目的，不涉及任何用户数据传输。</p>
+
+    <hr>
+
+    <h2>五、儿童隐私保护</h2>
+    <p>本应用主要面向历史教育和爱国主义教育，适合所有年龄段用户使用。由于本应用不收集任何个人信息，因此不涉及儿童个人信息保护的特殊处理。我们建议：</p>
+    <ul>
+      <li>未成年人应在监护人指导下使用本应用；</li>
+      <li>监护人应关注未成年人的应用使用情况；</li>
+      <li>如有疑问，监护人可随时联系我们。</li>
+    </ul>
+
+    <hr>
+
+    <h2>六、隐私政策的更新</h2>
+    <p>我们可能会不时更新本隐私政策。更新后的政策将在本页面发布，并在应用内通知您。建议您定期查阅本政策。</p>
+    <p><strong>重大变更时，我们会：</strong></p>
+    <ul>
+      <li>在应用内显著位置通知您；</li>
+      <li>更新"最后更新日期"；</li>
+      <li>提供政策变更说明。</li>
+    </ul>
+
+    <hr>
+
+    <h2>七、联系我们</h2>
+    <p>如果您对本隐私政策有任何疑问、意见或建议，请通过以下方式联系我们：</p>
+    <ul>
+      <li><strong>应用名称</strong>：长征记忆</li>
+      <li><strong>开发者</strong>：scr498</li>
+      <li><strong>应用版本</strong>：1.1.1</li>
+      <li><strong>Bundle ID</strong>：com.scr498.changzheng100</li>
+    </ul>
+    <p>我们将在收到您的反馈后尽快回复。</p>
+
+    <hr>
+
+    <h2>八、法律声明</h2>
+    <p>本隐私政策的解释权归开发者所有。本政策受中华人民共和国法律管辖，如有争议，双方应友好协商解决。</p>
+
+    <div class="footer">
+      <p>感谢您信任并使用「长征记忆」应用！</p>
+      <p>我们将持续致力于保护您的隐私安全，为您提供优质的历史教育服务。</p>
+    </div>
+  </div>
 </body>
 </html>
